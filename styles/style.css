@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.root .root_articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin: 10% 0 0 42px;
+  height: 10%;
+}
+.root .new_article {
+  display: flex;
+  flex-direction: column;
+}
+.root .new_article form {
+  display: flex;
+  flex-direction: column;
+  height: 84vh;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  margin-top: 70px;
+}
+.root .new_article form input {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: 0;
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  color: black;
+  margin: 10px 0;
+}
+.root .new_article form textarea {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: 0;
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  color: black;
+  margin: 10px 0;
+}
+.root .new_article form button {
+  width: 50%;
+}
+.root .articles {
+  margin-left: 77px;
+}
+.root .main_articles {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 53px;
+}
+.root .main_articles .icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.root .main_articles .icons a {
+  margin: 20px 0 20px 0;
+  border-radius: 33px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.root .main_articles .icons a:hover {
+  background-color: yellow;
+}
+.root .main_articles .icons .fa-pen-to-square:before {
+  color: black;
+  font-size: 33px;
+}
+.root .main_articles .icons .fa-trash-can:before {
+  color: black;
+  font-size: 33px;
+}
+.root .card {
+  display: flex;
+  flex-direction: row;
+  width: 90vw !important;
+  margin: 10px auto 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.root .post_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: 80px;
+  width: 22vw;
+}
+.root .post_article a button i {
+  color: white;
+  margin-right: 12px;
+}
+.root .show_articles {
+  display: flex;
+  flex-direction: row;
+}
+.root .signup_form {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-image: url("/components/Images/body-bg.jpg");
+  height: 100vh;
+}
+.root .signup_form .sign_up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(92, 102, 111, 0.6);
+  border-radius: 10px;
+  height: 87vh;
+  background-color: #ffffff;
+  padding: 23px;
+  margin: auto;
+}
+.root .signup_form .sign_up .already {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.root .signup_form .sign_up .already p {
+  font-size: 21px;
+  text-decoration: none;
+}
+.root .signup_form .sign_up .already .btn-warning {
+  width: 100%;
+}
+.root .signup_form .sign_up p {
+  margin: 0;
+  font-size: 23px;
+  color: black;
+}
+.root .signup_form .sign_up .header {
+  display: flex;
+  justify-content: center;
+}
+.root .signup_form .sign_up .header img {
+  max-width: 25%;
+  background-color: white;
+}
+.root .signup_form .sign_up label {
+  display: flex;
+  width: 83%;
+}
+.root .signup_form .sign_up label i {
+  display: flex;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ededed;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 50px;
+  margin: auto;
+  background-color: #f1f1f1;
+}
+.root .signup_form .sign_up input {
+  border: 1px solid #ededed;
+  border-radius: 0 10px 10px 0;
+  font-size: 15px;
+  outline: 0;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  color: black;
+  margin: 10px 0;
+}
+.root .signup_form .sign_up button {
+  width: 83%;
+}
+.root .signup_form .sign_up .btn {
+  color: white;
+}
+.root .nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #ededed;
+  justify-content: space-around;
+}
+.root .nav .header img {
+  max-width: 15%;
+}
+.root .nav .navbar {
+  display: flex;
+  flex-direction: row;
+}
+.root .nav .navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.root .nav .navbar ul span {
+  display: flex;
+  flex-direction: row;
+  margin-left: 75px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 12px;
+  text-decoration: none;
+  width: 164px;
+  padding: 1px 12px 1px 12px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.root .nav .navbar ul span .fa-solid {
+  line-height: revert;
+  padding-right: 12px;
+}
+.root .nav .navbar ul a {
+  display: flex;
+  flex-direction: row;
+  margin-left: 75px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 12px;
+  text-decoration: none;
+  width: 134px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.root .nav .navbar ul a .fa-solid {
+  line-height: revert;
+  padding-right: 12px;
+}
+.root .nav .navbar ul a:hover {
+  background-color: black;
+  color: white;
+}
+.root .nav .navbar ul span:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.root .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef2f0;
+}
+.root .contact_me {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+.root .contact_me .btn {
+  color: white;
+}
+.root .contact_me input {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: black;
+  margin: 10px 0;
+}
+.root .contact_me button {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

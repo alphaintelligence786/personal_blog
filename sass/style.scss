@@ -1,0 +1,355 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  //index
+  .root_articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: 10% 0 0 42px;
+    height: 10%;
+
+  }
+
+  //new article
+  .new_article {
+    display: flex;
+    flex-direction: column;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      height: 84vh;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+      margin-top: 70px;
+
+      input {
+        border: 1px solid black;
+        border-radius: 4px;
+        font-size: 15px;
+        outline: 0;
+        padding: 10px;
+        width: 50%;
+        box-sizing: border-box;
+        color: black;
+        margin: 10px 0;
+      }
+
+      textarea {
+        border: 1px solid black;
+        border-radius: 4px;
+        font-size: 15px;
+        outline: 0;
+        padding: 10px;
+        width: 50%;
+        box-sizing: border-box;
+        color: black;
+        margin: 10px 0;
+      }
+
+      button {
+        width: 50%;
+      }
+    }
+  }
+
+  //post_article
+  .articles {
+    margin-left: 77px;
+  }
+
+  .main_articles {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 53px;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+
+      a {
+        margin: 20px 0 20px 0;
+        border-radius: 33px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      a:hover {
+        background-color: yellow;
+      }
+
+      .fa-pen-to-square:before {
+        color: black;
+        font-size: 33px;
+      }
+
+      .fa-trash-can:before {
+        color: black;
+        font-size: 33px;
+      }
+
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 90vw !important;
+    margin: 10px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 80px;
+    width: 22vw;
+
+    a {
+      button {
+        i {
+          color: white;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .show_articles {
+    display: flex;
+    flex-direction: row;
+  }
+
+  //sign up form
+  .signup_form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-image: url("/components/Images/body-bg.jpg");
+    height: 100vh;
+
+    .sign_up {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgba(92, 102, 111, 0.6);
+      border-radius: 10px;
+      height: 87vh;
+      background-color: #ffffff;
+      padding: 23px;
+      margin: auto;
+
+      .already {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+
+        p {
+          font-size: 21px;
+          text-decoration: none;
+        }
+
+        .btn-warning {
+          width: 100%;
+        }
+      }
+
+      p {
+        margin: 0;
+        font-size: 23px;
+        color: black;
+
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 25%;
+          background-color: white;
+
+        }
+      }
+
+      label {
+        display: flex;
+        width: 83%;
+
+        i {
+          display: flex;
+          border-radius: 10px 0 0 10px;
+          border: 1px solid #ededed;
+          justify-content: center;
+          align-items: center;
+          width: 38px;
+          height: 50px;
+          margin: auto;
+          background-color: #f1f1f1;
+        }
+      }
+
+      input {
+        border: 1px solid #ededed;
+        border-radius: 0 10px 10px 0;
+        font-size: 15px;
+        outline: 0;
+        padding: 10px;
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        color: black;
+        margin: 10px 0;
+      }
+
+      button {
+        width: 83%;
+      }
+
+      .btn {
+        color: white;
+      }
+    }
+  }
+
+  //index CSS
+  .nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #ededed;
+    //position: fixed;
+    justify-content: space-around;
+
+    .header {
+      img {
+        max-width: 15%;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: row;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        span {
+          display: flex;
+          flex-direction: row;
+          margin-left: 75px;
+          color: black;
+          border: 1px solid black;
+          border-radius: 12px;
+          text-decoration: none;
+          width: 164px;
+          padding: 1px 12px 1px 12px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+
+          .fa-solid {
+            line-height: revert;
+            padding-right: 12px;
+          }
+        }
+
+        a {
+          display: flex;
+          flex-direction: row;
+          margin-left: 75px;
+          color: black;
+          border: 1px solid black;
+          border-radius: 12px;
+          text-decoration: none;
+          width: 134px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+
+          .fa-solid {
+            line-height: revert;
+            padding-right: 12px;
+          }
+        }
+
+        a:hover {
+          background-color: black;
+          color: white;
+        }
+
+        span:hover {
+          background-color: black;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  //contact Me form
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef2f0;
+  }
+
+  .contact_me {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+
+    .btn {
+      color: white;
+    }
+
+    input {
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 15px;
+      outline: 0;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      color: black;
+      margin: 10px 0;
+
+    }
+
+    button {
+      width: 50%;
+    }
+  }
+}
